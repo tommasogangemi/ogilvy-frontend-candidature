@@ -30,7 +30,7 @@ p {
 }
 
 .logo-bar,
-.navbar {
+#navbar {
 	height: 48px;
 	padding: 0 80px;
 	background: $dark-blue;
@@ -47,7 +47,7 @@ p {
 	display: none;
 }
 
-.navbar {
+#navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -75,7 +75,7 @@ p {
 	}
 }
 
-.chi-siamo {
+#chi-siamo {
 	padding: 32px 80px;
 	display: flex;
 	flex-direction: column;
@@ -137,7 +137,110 @@ p {
 	}
 }
 
-.footer {
+#la-nostra-offerta {
+	background: $dark-blue;
+	height: 384px;
+	margin-bottom: 128px;
+
+	.presentazione {
+		padding: 32px 160px 0;
+		display: flex;
+		justify-content: space-between;
+
+		.offerta-headline {
+			h1 {
+				margin-top: 16px;
+				color: $light-grey;
+			}
+		}
+
+		.offerta-body {
+			width: 65%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			p {
+				color: $light-grey;
+			}
+
+			.scopri-i-brand {
+				padding: 0 4px;
+				width: 30%;
+				text-align: center;
+				border-bottom: 2px solid $light-grey;
+				transition: all 0s;
+
+				&:hover {
+					border-bottom: 2px solid $dark-blue;
+				}
+			}
+		}
+	}
+
+	.carousel {
+		display: flex;
+		margin-top: 64px;
+		padding: 16px 160px;
+		overflow: scroll;
+		overflow: -moz-scrollbars-none;
+		-ms-overflow-style: none;
+
+		.img-container {
+			min-width: 384px;
+			height: 216px;
+			margin-right: 32px;
+			background: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 0 16px rgb(70, 70, 70);
+		}
+
+		.buffer {
+			min-width: 128px;
+			background: none;
+			box-shadow: none;
+		}
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+#magazine {
+	background: $light-grey;
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	.scopri-di-piu {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	h1 {
+		margin: 16px 0;
+	}
+
+	.magazine-link {
+		color: $dark-blue;
+		margin-top: 16px;
+		padding: 4px 6px;
+		border-bottom: 1px solid $dark-blue;
+		transition: all 0s;
+
+		&:hover {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+}
+
+#footer {
 	height: 96px;
 	padding: 0 80px;
 	background: $dark-blue;

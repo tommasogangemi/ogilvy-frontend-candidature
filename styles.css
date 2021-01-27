@@ -26,7 +26,7 @@ p {
 }
 
 .logo-bar,
-.navbar {
+#navbar {
   height: 48px;
   padding: 0 80px;
   background: #070d3c;
@@ -41,7 +41,7 @@ p {
   display: none;
 }
 
-.navbar {
+#navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,13 +53,13 @@ p {
           align-items: center;
 }
 
-.navbar .nav-link {
+#navbar .nav-link {
   font-weight: 400;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.navbar .nav-link:hover {
+#navbar .nav-link:hover {
   text-decoration: underline;
 }
 
@@ -80,7 +80,7 @@ p {
   font-size: 12px;
 }
 
-.chi-siamo {
+#chi-siamo {
   padding: 32px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,7 +182,140 @@ p {
           justify-content: space-between;
 }
 
-.footer {
+#la-nostra-offerta {
+  background: #070d3c;
+  height: 384px;
+  margin-bottom: 128px;
+}
+
+#la-nostra-offerta .presentazione {
+  padding: 32px 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#la-nostra-offerta .presentazione .offerta-headline h1 {
+  margin-top: 16px;
+  color: #e2e4ec;
+}
+
+#la-nostra-offerta .presentazione .offerta-body {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#la-nostra-offerta .presentazione .offerta-body p {
+  color: #e2e4ec;
+}
+
+#la-nostra-offerta .presentazione .offerta-body .scopri-i-brand {
+  padding: 0 4px;
+  width: 30%;
+  text-align: center;
+  border-bottom: 2px solid #e2e4ec;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+#la-nostra-offerta .presentazione .offerta-body .scopri-i-brand:hover {
+  border-bottom: 2px solid #070d3c;
+}
+
+#la-nostra-offerta .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  padding: 16px 160px;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+#la-nostra-offerta .carousel .img-container {
+  min-width: 384px;
+  height: 216px;
+  margin-right: 32px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 16px #464646;
+          box-shadow: 0 0 16px #464646;
+}
+
+#la-nostra-offerta .carousel .buffer {
+  min-width: 128px;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#la-nostra-offerta .carousel::-webkit-scrollbar {
+  display: none;
+}
+
+#magazine {
+  background: #e2e4ec;
+  padding: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#magazine .scopri-di-piu {
+  width: 100%;
+  font-size: 14px;
+}
+
+#magazine h1 {
+  margin: 16px 0;
+}
+
+#magazine .magazine-link {
+  color: #070d3c;
+  margin-top: 16px;
+  padding: 4px 6px;
+  border-bottom: 1px solid #070d3c;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+#magazine .magazine-link:hover {
+  border-bottom: 1px solid #e2e4ec;
+}
+
+#footer {
   height: 96px;
   padding: 0 80px;
   background: #070d3c;
@@ -195,12 +328,12 @@ p {
           align-items: center;
 }
 
-.footer .footer-logo {
+#footer .footer-logo {
   height: 30%;
   margin-right: 24px;
 }
 
-.footer .footer-link {
+#footer .footer-link {
   color: #e2e4ec;
   font-size: 14px;
   padding: 0 8px;
@@ -210,11 +343,11 @@ p {
   transition: all 0.2s;
 }
 
-.footer .footer-link:hover {
+#footer .footer-link:hover {
   text-decoration: underline;
 }
 
-.footer .footer-link:last-child {
+#footer .footer-link:last-child {
   border: none;
 }
 /*# sourceMappingURL=styles.css.map */
