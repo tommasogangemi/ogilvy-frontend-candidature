@@ -101,6 +101,12 @@ p {
   width: 120%;
 }
 
+.chi-siamo-img {
+  min-width: 640px;
+  min-height: 360px;
+  background-size: cover;
+}
+
 .entry {
   width: 100%;
   display: -webkit-box;
@@ -139,6 +145,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.big-entry .big-entry-img {
+  background-size: cover;
 }
 
 .big-entry .didascalia {
@@ -240,12 +250,13 @@ p {
   display: flex;
   margin-top: 64px;
   padding: 16px 160px;
+  cursor: pointer;
   overflow: scroll;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
 }
 
-#la-nostra-offerta .carousel .img-container {
+#la-nostra-offerta .carousel .carousel-img-container {
   min-width: 384px;
   height: 216px;
   margin-right: 32px;
@@ -349,5 +360,12 @@ p {
 
 #footer .footer-link:last-child {
   border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .chi-siamo-img {
+    min-width: 128px;
+    height: 72px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

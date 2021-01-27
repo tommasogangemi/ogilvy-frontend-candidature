@@ -89,6 +89,12 @@ p {
 	width: 120%;
 }
 
+.chi-siamo-img {
+	min-width: 640px;
+	min-height: 360px;
+	background-size: cover;
+}
+
 .entry {
 	width: 100%;
 	display: flex;
@@ -112,6 +118,10 @@ p {
 	width: 1034px;
 	display: flex;
 	flex-direction: column;
+
+	.big-entry-img {
+		background-size: cover;
+	}
 
 	.didascalia {
 		padding: 32px 0;
@@ -182,11 +192,12 @@ p {
 		display: flex;
 		margin-top: 64px;
 		padding: 16px 160px;
+		cursor: pointer;
 		overflow: scroll;
 		overflow: -moz-scrollbars-none;
 		-ms-overflow-style: none;
 
-		.img-container {
+		.carousel-img-container {
 			min-width: 384px;
 			height: 216px;
 			margin-right: 32px;
@@ -268,5 +279,12 @@ p {
 		&:last-child {
 			border: none;
 		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.chi-siamo-img {
+		min-width: 128px;
+		height: 72px;
 	}
 }
