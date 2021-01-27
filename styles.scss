@@ -24,13 +24,13 @@ a {
 }
 
 .logo-bar {
-	.hamburger {
-		display: none;
-	}
-
 	.logo {
 		height: 90%;
 	}
+}
+
+.hamburger {
+	display: none;
 }
 
 .navbar {
@@ -58,5 +58,30 @@ a {
 	.history {
 		color: $dark-blue;
 		font-size: 12px;
+	}
+}
+
+.footer {
+	height: 96px;
+	padding: 0 80px;
+	background: $dark-blue;
+	border-top: 2px solid $light-grey;
+	display: flex;
+	align-items: center;
+
+	.footer-logo {
+		height: 30%;
+		margin-right: 24px;
+	}
+
+	.footer-link {
+		color: $light-grey;
+		font-size: 14px;
+		padding: 0 8px;
+		border-right: 1px solid $light-grey;
+
+		&:last-child {
+			border: none;
+		}
 	}
 }

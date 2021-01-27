@@ -19,12 +19,12 @@ a {
   border-bottom: 2px solid #e2e4ec;
 }
 
-.logo-bar .hamburger {
-  display: none;
-}
-
 .logo-bar .logo {
   height: 90%;
+}
+
+.hamburger {
+  display: none;
 }
 
 .navbar {
@@ -64,5 +64,34 @@ a {
 .history-bar .history {
   color: #070d3c;
   font-size: 12px;
+}
+
+.footer {
+  height: 96px;
+  padding: 0 80px;
+  background: #070d3c;
+  border-top: 2px solid #e2e4ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-logo {
+  height: 30%;
+  margin-right: 24px;
+}
+
+.footer .footer-link {
+  color: #e2e4ec;
+  font-size: 14px;
+  padding: 0 8px;
+  border-right: 1px solid #e2e4ec;
+}
+
+.footer .footer-link:last-child {
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */
