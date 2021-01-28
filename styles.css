@@ -209,6 +209,7 @@ p {
 
 #la-nostra-offerta .presentazione .offerta-headline h1 {
   margin-top: 16px;
+  padding-right: 24px;
   color: #e2e4ec;
 }
 
@@ -446,6 +447,59 @@ p {
   }
   .big-entry .didascalia .big-entry-body p:first-child {
     padding-bottom: 16px;
+  }
+  #la-nostra-offerta .presentazione {
+    padding: 16px 32px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #la-nostra-offerta .presentazione .offerta-headline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 0;
+  }
+  #la-nostra-offerta .presentazione .offerta-headline h1 {
+    margin: unset;
+    padding-right: 0;
+    padding-left: 24px;
+    text-align: right;
+  }
+  #la-nostra-offerta .presentazione .offerta-body {
+    width: 100%;
+    padding: 8px 0;
+  }
+  #la-nostra-offerta .presentazione .offerta-body .scopri-i-brand {
+    width: 75%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 16px;
+  }
+  #la-nostra-offerta .carousel {
+    margin-top: 8px;
+    padding: 16px 32px;
+  }
+  #la-nostra-offerta .carousel .carousel-img-container {
+    width: 256px;
+    height: 168px;
+  }
+  #la-nostra-offerta .carousel .buffer {
+    min-width: 1px;
+  }
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 8px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #footer .footer-link {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
