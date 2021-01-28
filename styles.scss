@@ -29,6 +29,16 @@ p {
 	color: $dark-blue;
 }
 
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+#main {
+	margin-top: 132px;
+}
+
 .logo-bar,
 #navbar {
 	height: 48px;
@@ -65,6 +75,7 @@ p {
 .history-bar {
 	height: 32px;
 	padding: 0 80px;
+	background: white;
 	border-bottom: 2px solid $light-grey;
 	display: flex;
 	align-items: center;
@@ -287,6 +298,10 @@ p {
 		font-size: 24px;
 	}
 
+	#main {
+		margin-top: 84px;
+	}
+
 	.logo-bar {
 		padding: unset;
 		display: flex;
@@ -294,8 +309,56 @@ p {
 		align-items: center;
 	}
 
+	.hamburger {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 46px;
+		width: 48px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		.ham-bar {
+			background: $light-grey;
+			width: 28px;
+			height: 3px;
+			margin: 3px auto 3px 8px;
+			border-radius: 9999px;
+			transition: all 0.3s ease-out;
+
+			&:last-child {
+				width: 20px;
+			}
+
+			&.slide {
+				width: 4px;
+			}
+		}
+	}
+
 	#navbar {
-		display: none;
+		position: absolute;
+		left: 0;
+		height: 100vh;
+		width: 256px;
+		padding: 16px 24px;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		transform: translateX(-100%);
+		transition: all 0.3s ease-out;
+
+		.nav-link {
+			margin: 16px 0;
+			border-bottom: 2px solid $light-grey;
+		}
+
+		&.slide-in {
+			transform: translateX(0%);
+		}
 	}
 
 	.history-bar {
