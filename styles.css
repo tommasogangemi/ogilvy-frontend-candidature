@@ -101,12 +101,6 @@ p {
   width: 120%;
 }
 
-.chi-siamo-img {
-  min-width: 640px;
-  min-height: 360px;
-  background-size: cover;
-}
-
 .entry {
   width: 100%;
   display: -webkit-box;
@@ -115,11 +109,14 @@ p {
   margin: 32px 0;
 }
 
-.entry .img-container {
-  width: 640px;
+.entry .chi-siamo-img {
+  width: 50%;
+  height: 360px;
+  background-size: cover;
 }
 
 .entry .didascalia {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,6 +145,8 @@ p {
 }
 
 .big-entry .big-entry-img {
+  width: 100%;
+  height: 400px;
   background-size: cover;
 }
 
@@ -363,9 +362,90 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  .chi-siamo-img {
-    min-width: 128px;
-    height: 72px;
+  h1 {
+    font-size: 24px;
+  }
+  .logo-bar {
+    padding: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navbar {
+    display: none;
+  }
+  .history-bar {
+    padding: 0 8px;
+  }
+  #chi-siamo {
+    padding: 16px 8px;
+  }
+  .scopri-di-piu {
+    width: unset;
+  }
+  .entry {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 16px 0;
+  }
+  .entry .chi-siamo-img {
+    width: 100%;
+    height: 202px;
+  }
+  .entry .didascalia {
+    width: 100%;
+    text-align: left;
+    padding: 16px;
+  }
+  .entry .didascalia h1 {
+    padding: 4px 0;
+  }
+  .entry .didascalia p {
+    padding: 8px 0;
+  }
+  .entry.reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .big-entry {
+    width: 100%;
+  }
+  .big-entry .big-entry-img {
+    height: 160px;
+  }
+  .big-entry .didascalia {
+    padding: 16px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .big-entry .didascalia .big-entry-headline {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .big-entry .didascalia .big-entry-headline .title {
+    margin: unset;
+    text-align: right;
+  }
+  .big-entry .didascalia .big-entry-body {
+    padding: 16px 0;
+    width: 100%;
+  }
+  .big-entry .didascalia .big-entry-body p:first-child {
+    padding-bottom: 16px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
